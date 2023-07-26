@@ -1,10 +1,13 @@
 +++
 title = "Staff"
+date = "2023-07-26"
 +++
 
 # Meet the Team
 
 ## Emily Thomspon
+
+<img src=/content/emily_thompson_headshot.jpg alt="Emily Thompson Headshot" width="200">
 
 **Position**: GIS Coordinator
 
@@ -12,7 +15,6 @@ title = "Staff"
 
 **Bio**:  Emily graduated from University of Oklahoma with a masters in geography, and is currently completing her doctoral dissertation in spatial geography.
 
-![Emily Thomspon](emily_thompson_headshot.jpg)
 
 ## Erik Rose
 
