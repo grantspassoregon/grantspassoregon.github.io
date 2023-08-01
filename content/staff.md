@@ -1,6 +1,6 @@
 +++
 title = "Staff"
-date = "2023-07-26"
+date = "2023-06-26"
 +++
 
 # Meet the Team
