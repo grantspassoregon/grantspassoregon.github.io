@@ -1,6 +1,6 @@
 +++
-title = "Announcements for 10/23/2023"
-date = 2023-10-23
+title = "Announcements for 10/19/2023"
+date = 2023-10-19
 
 [taxonomies]
 categories = ["News"]
