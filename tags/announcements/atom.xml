@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Announcements</title>
+    <link href="https://grantspassoregon.github.io/tags/announcements/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-10-26T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/tags/announcements/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;26&#x2F;2023</title>
+        <published>2023-10-26T00:00:00+00:00</published>
+        <updated>2023-10-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231026/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231026/</id>
+        
+        <content type="html">&lt;h2 id=&quot;city-web-viewer-updated&quot;&gt;City Web Viewer Updated&lt;&#x2F;h2&gt;
+&lt;p&gt;The Web Viewer will no longer prompt users to sign in to ECSO-911.  County services have switched to a view-only version for greater security.&lt;&#x2F;p&gt;
+&lt;p&gt;If you detect an issue with the City Web Viewer, contact our staff at &lt;a href=&quot;mailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Public version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Staff version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;City version of tax parcels updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;19&#x2F;2023</title>
+        <published>2023-10-19T00:00:00+00:00</published>
+        <updated>2023-10-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231019/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231019/</id>
+        
+        <content type="html">&lt;h2 id=&quot;web-links-added-to-online-viewer&quot;&gt;Web Links Added to Online Viewer&lt;&#x2F;h2&gt;
+&lt;p&gt;Staff and residents can now view planning agreements (Deferred Development, Fee in Lieu, Advanced Finance District, Service and Annexation) on the City Web Viewer.  The popup field for these assets will display a link under &amp;quot;Document: View&amp;quot;.  Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  Existing links in the GIS layer to these files on the employee network drives are still available and not affected by this change.&lt;&#x2F;p&gt;
+&lt;p&gt;The popup field for the tax parcel layers (City and County versions) now displays a link to the assessment map. Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  This differs from the behavior of the Josephine County Property Assessment Map, where the document link downloads the file to your PC.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links added the planning agreements layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links to assessment map added to taxlots layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Utility map updates pushed to Beehive.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Local database updates pushed to AGOL web services.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+</feed>

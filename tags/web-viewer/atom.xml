@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Web Viewer</title>
+    <link href="https://grantspassoregon.github.io/tags/web-viewer/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-20T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/tags/web-viewer/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Web Viewer Links</title>
+        <published>2023-11-20T00:00:00+00:00</published>
+        <updated>2023-11-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/web-viewer-links/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/web-viewer-links/</id>
+        
+        <content type="html">&lt;p&gt;A commonly-requested feature for the City Web Viewer is access to public documents, such as final plats or financial agreements, including Fee in Lieu, Deferred Development, Service &amp;amp; Annexation Agreements or Advance Finance Districts.  We are pleased to announce that the new version of the Web Viewer map includes web links to these various public documents, making them accessible to view and download for members of the public.&lt;&#x2F;p&gt;
+&lt;p&gt;To access final plats, turn on the visibility of the Subdivision Plats layer in the Property category of the Layers widget.  When you click on a feature, the viewing link will appear in the pop-up menu:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 1.  Web Link for Final Plats.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_plats.png alt=&quot;Web Links for Final Plats&quot; width=300&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;!-- &lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_plats.png alt=&quot;Web Links for Final Plats&quot; width=300&gt; --&gt;
+&lt;p&gt;To access City financial agreements, turn on the appropriate layer in the Planning category under Agreements and Financial sub-heading.  When you click on a feature, the viewing link will appear in the pop-up menu:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 2.  Web Link for AFDs.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_afd.png alt=&quot;Web Links for AFDs&quot; width=300&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Preparing this service for public access was a non-trivial process, because the City computer network was not set up to support this functionality.  Staff at the City access work documents using a shared network drive.  Our GIS layers often include links to documents on our network drive, and in ArcGIS these links will open the document on a PC that is operating on our internal network.  In the past, when the public wanted access to these documents, they would drop by the planning counter in person, or contact a member of our staff by email or phone.&lt;&#x2F;p&gt;
+&lt;p&gt;To facilitate public viewing and download, staff migrated storage of these documents to the City website, adding web links to over 4,000 features on the Web Viewer map.  If you discover a link that fails to open, or desire access to an additional class of documents, please let us know at &lt;a href=&quot;emailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bookmarks in the Web Viewer Beta Version</title>
+        <published>2023-07-26T00:00:00+00:00</published>
+        <updated>2023-07-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/bookmarks/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/bookmarks/</id>
+        
+        <content type="html">&lt;h3 id=&quot;why-do-we-need-bookmarks&quot;&gt;Why Do We Need Bookmarks?&lt;&#x2F;h3&gt;
+&lt;p&gt;With more than a hundred layers of map data available to view on the City Web Viewer, the overlay of information would be overwhelming if they were all visible at once.  Part of the reason we include so many layers is that different departments use different sets of layers for their work, and so although we could set commonly-used layers to start as visible, staff do not agree on the set of layers that should be visible, and their needs change from project to project.  A particular point of frustration with using a browser-based mapping application is that our users will spend time turning on a set of layers related to a specific task, and then have to turn them all on again if they refresh their browser.&lt;&#x2F;p&gt;
+&lt;p&gt;This was a common-enough pain point among users that the old version of ESRI&#x27;s App Builder had a &amp;quot;Restore Your Previous Session&amp;quot; button to set the layer configuration and map extent so that it matched the settings on at the last time of use.  However, the new ESRI Experience Builder does not offer this restore button, instead it has bookmarks.  Bookmarks offer a major improvement over the old &amp;quot;Restore Your Previous Session&amp;quot; button, because you can store multiple configurations as separate bookmarks and switch quickly between them.  Bookmarks also persist more reliably between browser refreshes, while the &amp;quot;Restore Your Previous Session&amp;quot; button had a nasty habit of forgetting where you were last time, forcing you to start over from scratch.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-do-i-make-bookmarks&quot;&gt;How Do I Make Bookmarks?&lt;&#x2F;h3&gt;
+&lt;p&gt;The Bookmarks widget is located along the row of widgets at the right side of the banner at the top of the screen.  The icon looks like a book with a cloth bookmark sticking out:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_menu.png alt=&quot;Bookmarks Menu&quot; width=400&gt;
+&lt;p&gt;To make a new bookmark, open the Bookmarks menu by clicking on the widget, and select the empty thumbnail with the plus sign in it:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_new.png alt=&quot;New Bookmark&quot; width=300&gt;
+&lt;p&gt;Customize the name of the bookmark by clicking in the name field and entering your own text:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_name.png alt=&quot;Name Bookmark&quot; width=300&gt;
+&lt;p&gt;The new bookmark will save the current layer configuration (which layers are visible) and map extent (the location and zoom level) at the time of creation.  When you restart the browser, you can return to these same settings by opening the bookmarks menu and selecting the saved bookmark.  In my case, clicking on the Addresses bookmark will turn on the layers for addresses, parcels, and streets, while moving the map extent back to where it was when I created the bookmark, centered on City Hall:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_addresses.png alt=&quot;Addresses Bookmark&quot; width=500&gt;
+&lt;p&gt;If my next task is to update the water distribution network, this previously involved a lot of clicking on the City Web Viewer, because I would turn on nine different water distribution layers as well as the aerial imagery.  On the new Beta Version, I can set a second bookmark that will set all these layers to &amp;quot;visible&amp;quot; in a single click, and center me over the Water Treatment Plant:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_water.png alt=&quot;Water Bookmark&quot; width=500&gt;
+&lt;p&gt;Being able to save workspace state in the Web Viewer app has been our most commonly-requested feature, and we are hopeful that the new Bookmark widget will help streamline the experience for our users and make the Web Viewer a more viable and productive tool for our staff.  If you would like to help test out this feature on the new Beta Version, feel free to give it a try at &lt;a href=&quot;https:&#x2F;&#x2F;experience.arcgis.com&#x2F;experience&#x2F;9c1a9de28a864f59a6fcd5d4dbb5f00c&quot;&gt;this link&lt;&#x2F;a&gt;, and do not forget to let us know what you think!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Beta Testing for New Web Viewer</title>
+        <published>2023-07-25T00:00:00+00:00</published>
+        <updated>2023-07-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/beta-web-viewer/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/beta-web-viewer/</id>
+        
+        <content type="html">&lt;h1 id=&quot;beta-web-viewer-open-for-testing&quot;&gt;Beta Web Viewer Open For Testing&lt;&#x2F;h1&gt;
+&lt;p&gt;Since releasing the Web Viewer in February of 2022, we have received a lot of welcome feedback on how we can improve the user experience.  Although some of the comments have been directed toward how we could improve organization and layout of the map data, the majority of feedback has been about issues with the application interface.  Some commonly-desired features include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A button to &amp;quot;restore your previous session&amp;quot;.&lt;&#x2F;li&gt;
+&lt;li&gt;Filters for selecting types of content within features.&lt;&#x2F;li&gt;
+&lt;li&gt;A directional navigation widget.&lt;&#x2F;li&gt;
+&lt;li&gt;Tools for selecting multiple features and viewing their attributes in a table.&lt;&#x2F;li&gt;
+&lt;li&gt;Better drawing and measurement tools.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Before we can upgrade the existing Web Viewer to a new version, we need to field test the new app and make sure that it works as intended.  This is where you come in!  Help us test the new Beta version today by clicking on &lt;a href=&quot;https:&#x2F;&#x2F;experience.arcgis.com&#x2F;experience&#x2F;9c1a9de28a864f59a6fcd5d4dbb5f00c&#x2F;&quot;&gt;this link&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Why does the Beta version looks so different?&lt;&#x2F;em&gt; The current Web Viewer uses an ArcGIS Instant App template to provide an application framework.  Instant App templates include a thematic layout and a number of optional app features by default.  Because they are quick and easy to set up, an Instant App template made sense when were starting out, to get a product out quickly and start delivering services to our users right away.  However, these app templates are limited in their ability to incorporate new features and tools.  In order to get the customizability that we needed, we needed to go beyond Instant Apps and target a richer application framework.  Previously, the standard tool for building web apps in ArcGIS was the App Builder.  In recent years, the App Builder has been deprecated in favor of the new Experience Builder.  Experience Builder is based upon the latest version of Java, and is capable of integrating 2D and 3D map layouts, among other improvements.  Eventually, we may decide to start building custom widgets for our apps, in which case we can use Experience Builder Developer Edition or the JavaScript SDK for ArcGIS to create a fully-custom web app.  Custom apps are more difficult to host and maintain, so for this Beta version we are using Experience Builder.&lt;&#x2F;p&gt;
+&lt;p&gt;Features that are not implemented in the Beta version, but are on the roadmap to be implemented in the future:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web links to public records (Fee in Lieu, Service &amp;amp; Annexation and Deferred Development agreements, AFDs)&lt;&#x2F;li&gt;
+&lt;li&gt;Improved content organization of layers in the map.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Is your preferred feature not on the list?  Do you have changes you would like to see in the next Beta version?  Let us know!  Email us at gis@grantspassoregon.gov.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
