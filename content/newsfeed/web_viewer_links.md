@@ -15,12 +15,13 @@ A commonly-requested feature for the City Web Viewer is access to public documen
 To access final plats, turn on the visibility of the Subdivision Plats layer in the Property category of the Layers widget.  When you click on a feature, the viewing link will appear in the pop-up menu:
 
 {{ fig_begin(caption = "Web Link for Final Plats.") }}
-<img src=/content/newsfeed/web_links_plats.png alt="Web Links for Final Plats" width=300>
+<img src=/content/newsfeed/web_links_plats.png>
 {{ fig_end() }}
+<!-- <img src=/content/newsfeed/web_links_plats.png alt="Web Links for Final Plats" width=300> -->
 
 To access City financial agreements, turn on the appropriate layer in the Planning category under Agreements and Financial sub-heading.  When you click on a feature, the viewing link will appear in the pop-up menu:
 
-{{ fig_begin(caption = "Web Link for Final Plats.") }}
+{{ fig_begin(caption = "Web Link for AFDs.") }}
 <img src=/content/newsfeed/web_links_afd.png alt="Web Links for AFDs" width=300>
 {{ fig_end() }}
 
