@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="650">
+  <style>.background {
+  fill: #eee;
+}
+
+.node {
+  fill: #fff;
+  stroke: #1e1e1e;
+}
+
+text,
+tspan {
+  fill: #1e1e1e;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.connection-text {
+  dominant-baseline: auto;
+}
+
+.path {
+  fill: none;
+  stroke: #1e1e1e;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.connection .arrowhead {
+  stroke: #1e1e1e;
+  fill: #1e1e1e;
+}</style>
+  <rect class="background" x="0" y="0" width="550" height="650" />
+  <g class="nodes">
+    <g class="node-wrapper">
+      <rect class="rect node" x="50" y="50" width="200" height="100" />
+      <text x="150" y="100">Enterprise Server</text>
+    </g>
+    <g class="node-wrapper">
+      <rect class="rect node" x="300" y="50" width="200" height="100" />
+      <text x="400" y="100">ArcGIS Online</text>
+    </g>
+    <g class="node-wrapper">
+      <rect class="rect node" x="50" y="200" width="200" height="100" />
+      <text x="150" y="250">Internal Service</text>
+    </g>
+    <g class="node-wrapper">
+      <rect class="rect node" x="300" y="200" width="200" height="100" />
+      <text x="400" y="250">Hosted Service</text>
+    </g>
+    <g class="node-wrapper">
+      <rect class="rect node" x="50" y="350" width="200" height="100" />
+      <text x="150" y="400">Web Map</text>
+    </g>
+    <g class="node-wrapper">
+      <rect class="rect node" x="50" y="500" width="200" height="100" />
+      <text x="150" y="550">Web Application</text>
+    </g>
+  </g>
+  <g class="connections">
+    <g class="connection">
+      <path class="path" d="M 150 150 L 150 200" />
+      <path class="arrowhead end" d="M 150 200 L 155 190 L 150 195 L 145 190 L 150 200" />
+    </g>
+    <g class="connection">
+      <path class="path" d="M 400 150 L 400 200" />
+      <path class="arrowhead end" d="M 400 200 L 405 190 L 400 195 L 395 190 L 400 200" />
+    </g>
+    <g class="connection">
+      <path class="path" d="M 150 300 L 150 350" />
+      <path class="arrowhead end" d="M 150 350 L 155 340 L 150 345 L 145 340 L 150 350" />
+    </g>
+    <g class="connection">
+      <path class="path" d="M 400 300 L 400 325 L 150 325 L 150 350" />
+      <path class="arrowhead end" d="M 150 350 L 155 340 L 150 345 L 145 340 L 150 350" />
+    </g>
+    <g class="connection">
+      <path class="path" d="M 150 450 L 150 500" />
+      <path class="arrowhead end" d="M 150 500 L 155 490 L 150 495 L 145 490 L 150 500" />
+    </g>
+  </g>
+</svg>
