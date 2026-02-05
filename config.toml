@@ -10,8 +10,8 @@ build_search_index = true
 theme = "deep_thought"
 
 taxonomies = [
-    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
 ]
 
 generate_feed = true
@@ -24,14 +24,15 @@ highlight_code = true
 
 [extra]
 navbar_items = [
-    { code = "en", nav_items = [
-        { url = "$BASE_URL", name = "Home" },
-        { url = "$BASE_URL/newsfeed", name = "News" },
-        { url = "$BASE_URL/staff", name = "Staff" },
-        { url = "$BASE_URL/categories", name = "Categories" },
-        { url = "$BASE_URL/tags", name = "Tags" },
-        { url = "https://github.com/grantspassoregon", name = "github", newtab = true },
-    ]},
+  { code = "en", nav_items = [
+    { url = "$BASE_URL", name = "Home" },
+    { url = "$BASE_URL/newsfeed", name = "News" },
+    { url = "$BASE_URL/blog", name = "Blog" },
+    { url = "$BASE_URL/staff", name = "Staff" },
+    { url = "$BASE_URL/categories", name = "Categories" },
+    { url = "$BASE_URL/tags", name = "Tags" },
+    { url = "https://github.com/grantspassoregon", name = "github", newtab = true },
+  ] },
 ]
 
 [extra.author]
@@ -45,48 +46,3 @@ github = "https://github.com/grantspassoregon"
 linkedin = ""
 twitter = ""
 facebook = ""
-
-hermit_menu = [
-    { link = "/", name = "Home" },
-    { link = "/newsfeed", name = "Newsfeed"},
-    { link = "/categories", name = "Categories" },
-    { link = "/tags", name = "Tags" },
-]
-
-hermit_social = [
-    { name = "github", link = "https://github.com/grantspassoregon" },
-    { name = "email", link = "mailto:gis@grantspassoregon.gov" },
-]
-
-after_dark_menu = [
-    { url = "$BASE_URL", name = "Home" },
-    { url = "$BASE_URL/newsfeed", name = "News" },
-    { url = "$BASE_URL/categories", name = "Categories" },
-    { url = "$BASE_URL/tags", name = "Tags" },
-    { url = "https://github.com/grantspassoregon", name = "github" },
-]
-
-after_dark_title = "City of Grants Pass GIS Division"
-
-# username = "Erik Rose"
-# user_title = "City of Grants Pass GIS Division"
-# user_description = "GIS News and Events"
-# show_author = true
-# show_categories = true
-# show_tags = true
-# main_menu = [
-#     {name = "City of Grants Pass GIS Division", url = "/"},
-#     {name = "News", url = "/categories/news"},
-# ]
-# theme_color = "red"
-#
-# enable_search = true
-# enable_sidebar = true
-# enable_adsense = false
-# enable_multilingue = true
-#
-# katex.enabled = true
-# katex.auto_render = true
-# chart.enabled = true
-# mermaid.enabled = true
-# galleria.enabled = true
