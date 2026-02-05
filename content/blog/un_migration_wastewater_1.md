@@ -1,5 +1,5 @@
 +++
-title = "UN Wastewater Migration: Inital Setup"
+title = "UN Wastewater Migration: Initial Setup"
 date = 2026-02-05
 
 [taxonomies]
