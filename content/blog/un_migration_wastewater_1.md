@@ -166,6 +166,30 @@ wastewater_pilot_2026/
 └── wastewater_pilot_2026.aprx
 ```
 
+### Set the Service Territory
+
+The Service Territory is a polygon feature class of one or more features that spans the operational area of the network. The extent of the features in this layer defines the extent of the Utility Network, meaning inside this area you can add features to the network, and outside you cannot.
+
+Why do we have to specify the extent of our service territory beforehand? According to Remi Myers, Product Manager for the ArcGIS Utility Network, on the [ESRI Community Forum](https://community.esri.com/t5/electric-questions/electric-utility-network-service-territory-purpose/td-p/532110):
+
+> The reason behind the service area was to create the optimal indexing structures for the utility network. These structures include the index on the dirty feature class and the future spatial partitioning of the network index. So creating a service area that is bigger than needed will have a potential negative side effect in that the spatial index is not going to be optimal but it will still function.
+
+The advantage of choosing a Service Territory that is "just right" is faster, more optimized lookups. Who doesn't want their maps to be fast? The disadvantage of choosing a service territory "too small" is that it may fail to accommodate future growth, requiring refactoring of the network down the line.
+
+As an environmental scientist, I tend to reach for watershed boundaries to delineate regional areas, which provide boundary lines that make sense for the topography. We are going to characterize our service territory as as the greater watershed associated with the Grants Pass area. Using the 8-digit boundary codes from the [NRCS Watershed Boundary Dataset](https://hydro.nationalmap.gov/arcgis/rest/services/wbd/MapServer/4), I have highlighted the surrounding watersheds, including a generous portion to the east that produces the majority of our drinking water {{ figref() }}. It begins in the easternmost portion at Crater Lake, visible in the map image as a large semi-circle in the drainage area, and terminates at the westernmost portion, where the Rogue River drains into the Pacific. This area should be small enough to keep acceptable performance characteristics, but large enough to satisfy even the most expansionist City Council.
+
+{{ fig_begin(caption = "Watershed Boundaries for the Grants Pass Area") }}
+<img src=/content/blog/watershed_boundaries.png alt="Watershed Boundaries for the Grants Pass Area" width=600>
+{{ fig_end() }}
+
+First I export the highlighted polygons to the project GDB, then I use the Pairwise Dissolve tool to merge the separate boundaries into a single polygon. In the active Map, I add the Service Territory layer from _ocrs_clean_, which should still be empty. Using the Append tool, I add the newly-created polygon to the Service Territory layer {{ figref() }}. Because the dissolve operation stripped away the GlobalID field, I found that the polygon imported with an (invalid) GUID of all zeros. To fix this, I selected the field in the Attribute Table and hit the plus button to generate a new GUID.
+
+{{ fig_begin(caption = "Grants Pass Service Territory") }}
+<img src=/content/blog/service_territory.png alt="Grants Pass Service Territory" width=600>
+{{ fig_end() }}
+
+All that being said, I could have just drawn a box around the assets in our existing dataset and called it a day. It would have been fine. You could even argue my version is worse, because it is larger than necessary. At least I find it aesthetically pleasing.
+
 ## Conclusion
 
-This concludes the setup process for our wastewater migration. I know -- we haven't done any actual migration yet! What we _have_ done is installed the required tools, downloaded the necessary source materials, and created a focused project space. We have projected our destination asset package into our target spatial projection, and now we are ready to actually start importing. For our blog series, we will continue to break down the elephant migration process into digestible article-sized bites. In the next post, we will examine how to use the Data Loading tools to import our assets from the source data into the target schema. Stay tuned!
+This concludes the setup process for our wastewater migration. I know -- we haven't done any actual migration yet! What we _have_ done is installed the required tools, downloaded the necessary source materials, and created a focused project space. We have projected our destination asset package into our target spatial projection, created our service territory, and now we are ready to actually start importing. For our blog series, we will continue to break down the elephant migration process into digestible article-sized bites. In the next post, we will examine how to use the Data Loading tools to import our assets from the source data into the target schema. Stay tuned!
