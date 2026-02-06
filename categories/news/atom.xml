@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - News</title>
+    <link href="https://grantspassoregon.github.io/categories/news/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-01-09T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/categories/news/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Utility Updates 1&#x2F;9&#x2F;2025</title>
+        <published>2025-01-09T00:00:00+00:00</published>
+        <updated>2025-01-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/utility-updates-20250109/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/utility-updates-20250109/</id>
+        
+        <content type="html">&lt;h2 id=&quot;stormwater&quot;&gt;Stormwater&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SWGM-2650 now runs from SWCB-3287 to SWCB-3091 per Josh Lennon on 12&#x2F;16&#x2F;2024. Previously the map showed the outlet as SWMH-976.&lt;&#x2F;li&gt;
+&lt;li&gt;SWGM-2446 now runs from SWMH-839 to SWMH-1207 per Josh Lennon on 12&#x2F;17&#x2F;2024. Previously the pipe connected to SWMH-1206.
+&lt;ul&gt;
+&lt;li&gt;SWMH-1206 now connects to SWMH-1207 via SWGM-12231.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 7&#x2F;03&#x2F;2024</title>
+        <published>2024-07-03T00:00:00+00:00</published>
+        <updated>2024-07-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20240703/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20240703/</id>
+        
+        <content type="html">&lt;h2 id=&quot;address-verification&quot;&gt;Address Verification&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the primary uses of addresses issued by the city is for emergency response. Although we contract out our emergency dispatch services through Emergency Communications of Southern Oregon (ECSO), as the addressing authority we are responsible for ensuring the addresses that they use are accurate and up-to-date. Discrepancies between our address databases in the past have resulted in avoidable delays during response, emphasizing the fact that inaccuracies are a safety issue.&lt;&#x2F;p&gt;
+&lt;p&gt;As a small but growing city, we have many of the address problems that occur at a large federal agency like the USPS, but lack deep pockets to purchase the expensive third-party software they use to manage addresses. Instead, we have been developing our own internal tooling to automate the cross-agency reconciliation process. These tools are not as fancy or feature-rich, but they are getting the job done. Over the past year, we have corrected hundreds of records, including one dating back to 2008.&lt;&#x2F;p&gt;
+&lt;p&gt;Earlier this year, ECSO completed an update of their address database to comply with the latest National Emergency Number Association (NENA) standard. This update changes the way they store and report addresses, introducing new fields and altering the way they classify existing street names. Fortunately, Grants Pass moved to a NENA-compliant standard in 2022, so we had a head start tackling the new format from ECSO, but the process still took several weeks. During the update, our code base grew by only 3% to just under 7K LOC, while delivering new features and improving on existing methods. At the same time, our code documentation has increased from 350 to over 1000 lines, making the code easier to learn, maintain and share.&lt;&#x2F;p&gt;
+&lt;p&gt;As we grow to better understand the problem space, we continue to improve our methods and increase the efficiency of the process. In additional to reconciling addresses with ECSO, the address code now also validates addresses for business licenses, and calculates the LexisNexis service boundary from the set of valid addresses for emergency response. Over time, we hope that reconciling the address database with our partner agencies can become painless and automated, and that avoidable emergency response delays related to bad address information can become a thing of past.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Case for Rust at City of Grants Pass</title>
+        <published>2023-12-13T00:00:00+00:00</published>
+        <updated>2023-12-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/rust-info/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/rust-info/</id>
+        
+        <content type="html">&lt;h1 id=&quot;why-rust&quot;&gt;Why Rust?&lt;&#x2F;h1&gt;
+&lt;p&gt;From the CISA white paper, &lt;a href=&quot;https:&#x2F;&#x2F;www.cisa.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;2023-12&#x2F;The-Case-for-Memory-Safe-Roadmaps-508c.pdf&quot;&gt;The Case for Memory-Safe Roadmaps&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mozilla released Rust in 2015. It is a compiled language and focuses on performance, type safety, and concurrency. It has an ownership model designed to ensure that there is only one owner of a piece of data. It has a feature called a “borrow checker” designed to ensure memory safety and prevent concurrent data races. While not perfect, the borrow checker system goes a long way to addressing memory safety issues at compile time. Rust enforces correctness at compile time to prevent memory safety and concurrency problems at runtime. As an example, a data race is a class of software bug that is notoriously hard to track down.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;“With Rust, you can statically verify that you don’t have data races. This means you avoid tricky-to-debug bugs by just not letting them into your code in the first place. The compiler won’t let you do it.”&lt;&#x2F;em&gt; - Lin Clark (Fastly)&lt;&#x2F;p&gt;
+&lt;p&gt;Rust has been getting a great deal of attention from several high-profile technologies, including the Linux kernel, Android, and Windows. It is also used in apps like those from Mozilla, and other online services, such as Dropbox, Amazon, and Facebook.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Reasons that Microsoft &lt;a href=&quot;https:&#x2F;&#x2F;security.googleblog.com&#x2F;2023&#x2F;01&#x2F;supporting-use-of-rust-in-chromium.html&quot;&gt;provided&lt;&#x2F;a&gt; for bringing Rust into the Chromium project (the Chrome browser):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simpler to use&lt;&#x2F;li&gt;
+&lt;li&gt;Safer&lt;&#x2F;li&gt;
+&lt;li&gt;Speeds up development&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;memory-safety&quot;&gt;Memory Safety&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;The Case for Memory Safe Roadmaps&lt;&#x2F;em&gt; published by the Cybersecurity and Infrastructure Security Agency (CISA) in December 2023 describes a memory safety vulnerability as a vulnerability affecting how memory can be accessed, written, allocated or deallocated in unintended ways. Memory-related coding errors include &amp;quot;buffer overflow&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;120.html&quot;&gt;CWE-120&lt;&#x2F;a&gt;), &amp;quot;use after free&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;416.html&quot;&gt;CWE-416&lt;&#x2F;a&gt;), &amp;quot;use of uninitialized memory&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;908.html&quot;&gt;CWE-908&lt;&#x2F;a&gt;) and &amp;quot;double free&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;415.html&quot;&gt;CWE-415&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;Memory safety vulnerabilities account for a large class of common vulnerabilities and exposures (CVEs). About 70% of Microsoft CVEs from &lt;a href=&quot;https:&#x2F;&#x2F;msrc.microsoft.com&#x2F;blog&#x2F;2019&#x2F;07&#x2F;a-proactive-approach-to-more-secure-code&#x2F;&quot;&gt;2006-2018&lt;&#x2F;a&gt; were memory safety vulnerabilities, as well as 70% of vulnerabilities identified in Google&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;www.chromium.org&#x2F;Home&#x2F;chromium-security&#x2F;memory-safety&#x2F;&quot;&gt;Chromium&lt;&#x2F;a&gt; project. One &lt;a href=&quot;https:&#x2F;&#x2F;hacks.mozilla.org&#x2F;2019&#x2F;02&#x2F;rewriting-a-browser-component-in-rust&#x2F;&quot;&gt;analysis&lt;&#x2F;a&gt; found 32 of 34 critical&#x2F;high bugs were memory safety vulnerabilities, and Google&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;googleprojectzero.blogspot.com&#x2F;2022&#x2F;04&#x2F;the-more-you-know-more-you-know-you.html&quot;&gt;Project Zero&lt;&#x2F;a&gt; team found 67% of zero-day vulnerabilities in 2021 were memory safety vulnerabilities.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;adoption&quot;&gt;Adoption&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;grantspassoregon.github.io&#x2F;newsfeed&#x2F;rust-info&#x2F;.&#x2F;images&#x2F;rust_daily_downloads.png&quot;&gt;Rust Daily Downloads&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This &lt;a href=&quot;https:&#x2F;&#x2F;maticrobots.com&#x2F;blog&#x2F;why-rust-its-the-safe-choice&#x2F;&quot;&gt;article&lt;&#x2F;a&gt; from Matic:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using Rust for critical tasks prevents many common security bugs, and encourages robust error handling. This helps us harden our software and protect private data.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We don&#x27;t spend time chasing memory safety bugs or concurrency errors, because the compiler has guard rails that push back when code tries to do something dangerous. It&#x27;s easy to make changes quickly, because the compiler will prevent entire categories of errors. In other languages, this &amp;quot;push back&amp;quot; can be delayed a long time (until static analysis runs, or runtime safety checks fire, or customers report bugs). With Rust we can catch most of these bugs almost instantly.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are long-term benefits, too. Rust&#x27;s type-focused style and firm boundaries improve the long-term manageability of code. Refactoring can be done fearlessly, and the compiler safety checks are robust enough that the refactoring is often done the moment the code compiles.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Did we take a risk by using Rust? Are we spending our &amp;quot;innovation tokens&amp;quot; recklessly? In our experience, Rust is the safe choice, and it&#x27;s hard to imagine using anything else. We are able to build things in less time, with less risk, and have more fun doing it. Developers can be fearlessly productive, because there is a lower risk of bugs that cost months of developer time.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;From the Filtra Rust &lt;a href=&quot;https:&#x2F;&#x2F;filtra.io&#x2F;rust-feb-24&quot;&gt;jobs report&lt;&#x2F;a&gt;, Matic has five full-time Rust developers on staff.&lt;&#x2F;p&gt;
+&lt;p&gt;This &lt;a href=&quot;https:&#x2F;&#x2F;blog.sdf.com&#x2F;p&#x2F;fast-development-in-rust-part-one&quot;&gt;article&lt;&#x2F;a&gt; from SDF:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Looking back from this one year mark, we&#x27;re happy to report that not only did we not die on the proverbial hill of learning Rust, the (much hyped) benefits of the language started materializing into tangible returns far sooner than we anticipated. While there is undeniably an upfront investment to learn Rust, by this point for us it has easily paid for itself many, many times over. Rust makes certain tasks easy that would have been exceedingly challenging in other languages.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An often under appreciated benefit of using a strongly-typed language like Rust in a fast-paced startup environment, is how much it helps with the task of refactoring. ... Because we know that better abstractions an be easily added later, it frees us to be much more bold in experimenting with new features! In Rust we are actually far more comfortable doing the &#x27;quick and dirty&#x27; thing to rapidly implement some new feature, knowing that it can all be easily cleaned up into better abstractions later when the requirements become better understood.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Quoting Lars Bergstrom from &lt;a href=&quot;https:&#x2F;&#x2F;www.theregister.com&#x2F;2024&#x2F;03&#x2F;31&#x2F;rust_google_c&#x2F;&quot;&gt;The Register&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There&#x27;s no loss in productivity when moving from Go to Rust. And the interesting thing is we do see some benefits from it. So we see reduced memory usage in the services that we&#x27;ve moved from Go ... and we see a decreased defect rate over time in those services that have been rewritten in Rust – so increasing correctness.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We&#x27;ve seen a decrease by more than 2x in the amount of effort required to build the services in Rust [compared to C++] as well as maintain and update those services written in Rust, and so that&#x27;s a really huge thing for us because C++ code is very expensive.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Eight-five percent of [our developers] believe that their Rust code is more likely to be correct than the other code within their system. … I&#x27;ve been through more than one language survey in my life and I&#x27;ve never seen those kinds of numbers before.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;thenewstack.io&#x2F;meet-grain-the-high-level-language-optimized-for-webassembly&#x2F;&quot;&gt;The New Stack&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“OCaml [was] this fantastic language from the ’90s, with all these amazing different language features … one of the huge features was pattern matching,” he said. “Pattern matching is this incredible, powerful programming language feature that most languages have not had at all.”&lt;&#x2F;p&gt;
+&lt;p&gt;Pattern matching in languages like OCaml, Grain and Rust means the compiler will alert the developer if an edge case is missed and a piece of data might break the program, he explained.&lt;&#x2F;p&gt;
+&lt;p&gt;“That is such a powerful concept; just because of that you eliminate so many different possible bugs in your programs,” Spencer said. “One of the funny things they say about OCaml is [that] if your code compiles, it’s correct. It might not do what you wanted it to do, but it’s definitely doing what it’s supposed to do based on the code.”&lt;&#x2F;p&gt;
+&lt;p&gt;That’s not something you have with JavaScript or Python, he added.&lt;&#x2F;p&gt;
+&lt;p&gt;“You write those programs, and it’s broken, you’ve got to go figure out why is the thing broken. And you put in a bunch of log statements and try to debug it and it’s a pain in the butt when you have these other languages that are able to just tell you, ‘Hey, here’s exactly how your code is broken,’” he said.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This is from an interview of Oscar Spencer about the Grain language for web assembly. Even though the author is not promoting Rust, this statement on the virtues of pattern matching in Rust closely matches my own experience.&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;o-santi.github.io&#x2F;blog&#x2F;rust-is-not-about-memory-safety&#x2F;&quot;&gt;Leonardo Santiago&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The main strength of Rust, and where it differs from all mainstream languages, is that it has a very clear focus on program correctness. The &lt;em&gt;raison d’être&lt;&#x2F;em&gt; of the borrow checker is statically assuring that all references are pointing to valid memory, such that it is literally impossible for any borrow be null or to point to some freed memory (modulus implementation errors of course).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;...&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not only that, but Rust language&#x27;s features makes it so, so much easier to write correct software: sum types (tagged unions), &lt;code&gt;Option&lt;&#x2F;code&gt; instead of &lt;code&gt;NULL&lt;&#x2F;code&gt; (which in and of itself is amazing), &lt;code&gt;Result&lt;&#x2F;code&gt; for errors (making obligatory to handle all possible branches your program can take), a strong and powerful static type system, and ditching inheritance and classes in favor of traits.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that I never ever talked about memory safety. Even in a world where C wasn’t in fact full of memory vulnerabilities, Rust would still be miles better, because it statically assures you that the meaning of your program is tightly reproduced by the code you’ve written.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Web Viewer Links</title>
+        <published>2023-11-20T00:00:00+00:00</published>
+        <updated>2023-11-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/web-viewer-links/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/web-viewer-links/</id>
+        
+        <content type="html">&lt;p&gt;A commonly-requested feature for the City Web Viewer is access to public documents, such as final plats or financial agreements, including Fee in Lieu, Deferred Development, Service &amp;amp; Annexation Agreements or Advance Finance Districts.  We are pleased to announce that the new version of the Web Viewer map includes web links to these various public documents, making them accessible to view and download for members of the public.&lt;&#x2F;p&gt;
+&lt;p&gt;To access final plats, turn on the visibility of the Subdivision Plats layer in the Property category of the Layers widget.  When you click on a feature, the viewing link will appear in the pop-up menu:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 1.  Web Link for Final Plats.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_plats.png alt=&quot;Web Links for Final Plats&quot; width=300&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;!-- &lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_plats.png alt=&quot;Web Links for Final Plats&quot; width=300&gt; --&gt;
+&lt;p&gt;To access City financial agreements, turn on the appropriate layer in the Planning category under Agreements and Financial sub-heading.  When you click on a feature, the viewing link will appear in the pop-up menu:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 2.  Web Link for AFDs.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_afd.png alt=&quot;Web Links for AFDs&quot; width=300&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Preparing this service for public access was a non-trivial process, because the City computer network was not set up to support this functionality.  Staff at the City access work documents using a shared network drive.  Our GIS layers often include links to documents on our network drive, and in ArcGIS these links will open the document on a PC that is operating on our internal network.  In the past, when the public wanted access to these documents, they would drop by the planning counter in person, or contact a member of our staff by email or phone.&lt;&#x2F;p&gt;
+&lt;p&gt;To facilitate public viewing and download, staff migrated storage of these documents to the City website, adding web links to over 4,000 features on the Web Viewer map.  If you discover a link that fails to open, or desire access to an additional class of documents, please let us know at &lt;a href=&quot;emailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;26&#x2F;2023</title>
+        <published>2023-10-26T00:00:00+00:00</published>
+        <updated>2023-10-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231026/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231026/</id>
+        
+        <content type="html">&lt;h2 id=&quot;city-web-viewer-updated&quot;&gt;City Web Viewer Updated&lt;&#x2F;h2&gt;
+&lt;p&gt;The Web Viewer will no longer prompt users to sign in to ECSO-911.  County services have switched to a view-only version for greater security.&lt;&#x2F;p&gt;
+&lt;p&gt;If you detect an issue with the City Web Viewer, contact our staff at &lt;a href=&quot;mailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Public version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Staff version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;City version of tax parcels updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;19&#x2F;2023</title>
+        <published>2023-10-19T00:00:00+00:00</published>
+        <updated>2023-10-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231019/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231019/</id>
+        
+        <content type="html">&lt;h2 id=&quot;web-links-added-to-online-viewer&quot;&gt;Web Links Added to Online Viewer&lt;&#x2F;h2&gt;
+&lt;p&gt;Staff and residents can now view planning agreements (Deferred Development, Fee in Lieu, Advanced Finance District, Service and Annexation) on the City Web Viewer.  The popup field for these assets will display a link under &amp;quot;Document: View&amp;quot;.  Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  Existing links in the GIS layer to these files on the employee network drives are still available and not affected by this change.&lt;&#x2F;p&gt;
+&lt;p&gt;The popup field for the tax parcel layers (City and County versions) now displays a link to the assessment map. Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  This differs from the behavior of the Josephine County Property Assessment Map, where the document link downloads the file to your PC.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links added the planning agreements layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links to assessment map added to taxlots layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Utility map updates pushed to Beehive.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Local database updates pushed to AGOL web services.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Mitigating Downtime with Redundancy</title>
+        <published>2023-07-31T00:00:00+00:00</published>
+        <updated>2023-07-31T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/downtime-redundancy/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/downtime-redundancy/</id>
+        
+        <content type="html">&lt;p&gt;High availability refers to an internet service that experiences very little downtime.  Internet availability in a developed society has become a basic utility, analogous to receiving water or power service.  Just as residents expect internet service to be largely uninterrupted, companies providing internet services will often enter into availability contracts, guaranteeing that downtime for their service will not exceed a specific threshold.  The &amp;quot;four nines&amp;quot; of runtime refers to 99.99% uptime, which translates to less than 52 minutes of downtime per year, and this is a standard industry requirement in cloud Service Level Agreements.  Even if our city has not entered in a legally-binding agreement to provide our services with four nines of availability, our residents have grown accustomed to high availability of internet services, to the point that any downtime a city service does experience can have an out-sized negative impact on residents&#x27; perception of the service&#x27;s reliability.  A few poorly-timed incidents of downtime, and residents could begin to avoid using the provided service altogether, because we have failed to meet the user expectation of high availability.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-gis-service-pipeline&quot;&gt;The GIS Service Pipeline&lt;&#x2F;h3&gt;
+&lt;p&gt;How do we ensure that city GIS services remain available?  Unfortunately, there are multiple failure points in the GIS service pipeline that can result in service disruption and downtime.  Here we will discuss some strategies that our team uses to mitigate the risks of service disruption at each stage of service delivery.  Let us first consider the minimal elements of a GIS service pipeline (see Figure 1)
+.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 1.  A basic GIS service pipeline.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;single_pipeline.svg&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;The ArcGIS Enterprise Server is a running instance owned and operated by the City that hosts all the City&#x27;s data.  The various different spatial datasets that the City maintains, including water distribution, stormwater, wastewater, transportation and addresses all live on a centralized database running on this server.  Because all members in the organization are viewing and referencing the same shared data on the centralized database, any changes that a single staff member make become instantly visible to the other users.&lt;&#x2F;p&gt;
+&lt;p&gt;Seeing contributions in real time is a strong advantage of using a centralized Enterprise database, and if everyone is running an instance of ArcGIS Pro at their local workstation on the City network, then this setup is sufficient.  But if we want to share the resources on our server with the broader internet world, then we need to publish it as a service.  Publishing GIS data as a service allows others to access it over the web at a set url.  A specific advantage of publishing data from an Enterprise Server is that registered data sources automatically update in close to real time, so the data on the published service stays in sync with its reference data.  Published data services is a prerequisite for browser-based mapping applications, an increasingly popular way of interacting with map data.&lt;&#x2F;p&gt;
+&lt;p&gt;Web applications do not reference the published service directly, instead they point to a web map.  The web map is an ArcGIS Item that holds references to published services, determining what data is present and how it is organized.  The only way to view a web map is through some sort of web application, whether that is ArcGIS Online&#x27;s Map Viewer or a custom web app such as the City Web Viewer.  Web applications control the viewing experience for a given map, and offer a degree of interactivity through widgets, such as the directional finder or drawing tools.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;redundant-published-services&quot;&gt;Redundant Published Services&lt;&#x2F;h3&gt;
+&lt;p&gt;The first major point of failure in this pipeline is the published service.  What might cause this service to fail?  The Enterprise server could be down, or there could be a localized internet outage.  Is there a way to mitigate this risk?  Part of our licensing agreement with ESRI provides access to ArcGIS Online (AGOL), including an annual allotment of site Credits for purchasing storage and processing services.  Currently, we duplicate every published service available on our local Enterprise server with a corresponding service on ArcGIS Online.  If there is a service interruption of either source, our own server or AGOL, then we can switch services to the other provider and avoid downtime (see Figure 2)
+.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 2.  Redundant published services.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;redundant_server.svg&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Hosting services on AGOL can potentially improve load times, because ESRI&#x27;s servers are hosting the data instead of our own.  However, we do not yet have good telemetry tools in place to benchmark load times, so the evidence is anecdotal.  A definite drawback to AGOL hosting is that we can no longer register our data sources with the service, meaning the data does not automatically sync and update with changes made on our internal server.  Once a week we update the AGOL services by republishing them using the &lt;code&gt;service_draft.py&lt;&#x2F;code&gt; and &lt;code&gt;service_update.py&lt;&#x2F;code&gt; scripts.  The &lt;code&gt;service_draft.py&lt;&#x2F;code&gt; script runs from the Python window of ArcGIS and will tie up the program for about 20 minutes while it prepares service drafts for each of the layers to publish.  The &lt;code&gt;service_update.py&lt;&#x2F;code&gt; script runs in the background from the terminal, but may fail to push individual services if any of the processes times out for any reason, and may need resetting before it runs on every service.  Both scripts are at the city repository page under the &lt;em&gt;scripts&lt;&#x2F;em&gt; repository.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;redundant-web-maps&quot;&gt;Redundant Web Maps&lt;&#x2F;h3&gt;
+&lt;p&gt;The web map experiences downtime during rebuilds.  We use the &lt;code&gt;webmap&lt;&#x2F;code&gt; package from the city repository page to build web maps from published sources.  When these sources change, or when the organization of the layers in the map change, then the map needs to be rebuilt.  The package will first clear the web map of any existing layer data, then replace the empty map with the updated layers.  However, the process of building the new map can take over 20 minutes for large maps like the City Web Viewer.  The build process can also fail for a number of reasons:  the map may reference published content from a third-party provider, such as the PLSS layers maintained by BLM, or the FEMA flood service map.  If the server distributing the third-party content is unavailable for any reason, the build will fail.  If the &lt;code&gt;webmap&lt;&#x2F;code&gt; package cannot read all the linked templates, or if any of the internal services are unresponsive, then the build will fail.  Any malformed code created in the latest update could throw runtime errors, causing the build to fail.  Any of these issues could leave you with an empty map object, where the existing layers have been deleted, and the new layers failed to populate the map.&lt;&#x2F;p&gt;
+&lt;p&gt;To mitigate downtime during map rebuilds, we use a backup map (see Figure 3)
+.  The backup is an exact copy of the current map in use by the application.  When we need to update the map, we update the unused backup.  This process could take 20 minutes or more, and we may have to resolve build errors, but since the map is not currently in use by the application, this does not result in downtime for the site.  Once the backup map is fully updated, and we have confirmed that it is functional, we can swap it into the running application for an &amp;quot;instant&amp;quot; update.  Then we can rebuild the map that we swapped out, and this map becomes the new &amp;quot;unused backup&amp;quot; until the next update.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 3.  Backup web map.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;backup_map.svg&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;staged-application-updates&quot;&gt;Staged Application Updates&lt;&#x2F;h3&gt;
+&lt;p&gt;The web application is one of the more stable components of the delivery chain, as we do not have to rebuild it when the target map changes.  If components of the application depend upon properties of the map that have changed, these components will need adjusting or the application may lose some functionality.  For instance, if the application contains filters for a specific layer of the map, and we remove this layer, then the filters will drop as well, because they no longer point to a valid layer.  Some application settings may need adjusting when switching to a backup map: even if the backup is an identical map, some of the widgets, filters and other settings on the application may need to be updated to point at the new map.&lt;&#x2F;p&gt;
+&lt;p&gt;The application may also experience flux as you add new features over time or make changes to the user interface.  Staff may request a new feature, or you may just want to try out a new trick from the latest ESRI blog.  The new feature may not work as expected, the new trick might not work at all, or features that were working may stop... how do we experiment with changes to the application without negatively impacting service for the current users?&lt;&#x2F;p&gt;
+&lt;p&gt;Our present approach is to use a Beta Version of the application as the development version (see Figure 4)
+.  All changes and experiments happen on the Beta Version, while the primary version remains stable and continues to deliver services to the user.  After a suitable development period, averaging six weeks, when we are confident that the changes on the Beta Version are stable improvements, then we replace the production version with the Beta Version.  The old production version is retired, the new production version remains stable throughout its service period, and we set up a new Beta Version to support future testing and experimentation.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 4.  Beta Version of Web Application.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;beta_version.svg&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;web-viewer-implementation&quot;&gt;Web Viewer Implementation&lt;&#x2F;h3&gt;
+&lt;p&gt;The City Web Viewer experiences the highest use among staff and residents, compared to our other web applications.  The Public Viewer serves residents, and has access to most of the same layers as the Staff Viewer, but the staff version includes a few extra layers that are not available to the public.  Using the &lt;code&gt;webmap&lt;&#x2F;code&gt; package, we can build the different versions of the web viewer map by passing to the constructor specifying whether the map is public.  We then have a Public Map and Staff Map.  Each map needs a dedicated application pointing at it, so we also have a Public Web Viewer app and a Staff Web Viewer app, with similar configurations, varying slightly depending on the difference in map content between the public and private version.&lt;&#x2F;p&gt;
+&lt;p&gt;Since the Public and Staff versions of the web application are so similar, we keep a single Beta Version of the app, and customize the settings depending on the map target when we move the Beta Version into production.  We still keep separate back up maps for each version, because they are built separately.  Both versions of the map use the same published services, even if the staff version includes layers that are not accessible to the public.  Therefore, both maps can rely on either our internal published services or our fallback services on AGOL (see Figure 5)
+.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 5.  Internal and Public Versions.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;multi_app.svg&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Built-in redundancy allows us to have confidence that the services we offer will be consistently available to our users.  However, maintaining redundancies in our production pipeline involves extra effort, producing and maintaining fallback data and services.  When planning for redundancy, consider the potential harm that could result from service downtime.  If the potential for harm is small, the extra levels of redundancy may not be cost-effective to implement and maintain.  When the risk of harm is great, consider these strategies for mitigating negative impacts from downtime.  When service uptime is important, redundancies at each potential failure point in the service pipeline can provide assurance and peace of mind.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bookmarks in the Web Viewer Beta Version</title>
+        <published>2023-07-26T00:00:00+00:00</published>
+        <updated>2023-07-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/bookmarks/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/bookmarks/</id>
+        
+        <content type="html">&lt;h3 id=&quot;why-do-we-need-bookmarks&quot;&gt;Why Do We Need Bookmarks?&lt;&#x2F;h3&gt;
+&lt;p&gt;With more than a hundred layers of map data available to view on the City Web Viewer, the overlay of information would be overwhelming if they were all visible at once.  Part of the reason we include so many layers is that different departments use different sets of layers for their work, and so although we could set commonly-used layers to start as visible, staff do not agree on the set of layers that should be visible, and their needs change from project to project.  A particular point of frustration with using a browser-based mapping application is that our users will spend time turning on a set of layers related to a specific task, and then have to turn them all on again if they refresh their browser.&lt;&#x2F;p&gt;
+&lt;p&gt;This was a common-enough pain point among users that the old version of ESRI&#x27;s App Builder had a &amp;quot;Restore Your Previous Session&amp;quot; button to set the layer configuration and map extent so that it matched the settings on at the last time of use.  However, the new ESRI Experience Builder does not offer this restore button, instead it has bookmarks.  Bookmarks offer a major improvement over the old &amp;quot;Restore Your Previous Session&amp;quot; button, because you can store multiple configurations as separate bookmarks and switch quickly between them.  Bookmarks also persist more reliably between browser refreshes, while the &amp;quot;Restore Your Previous Session&amp;quot; button had a nasty habit of forgetting where you were last time, forcing you to start over from scratch.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-do-i-make-bookmarks&quot;&gt;How Do I Make Bookmarks?&lt;&#x2F;h3&gt;
+&lt;p&gt;The Bookmarks widget is located along the row of widgets at the right side of the banner at the top of the screen.  The icon looks like a book with a cloth bookmark sticking out:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_menu.png alt=&quot;Bookmarks Menu&quot; width=400&gt;
+&lt;p&gt;To make a new bookmark, open the Bookmarks menu by clicking on the widget, and select the empty thumbnail with the plus sign in it:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_new.png alt=&quot;New Bookmark&quot; width=300&gt;
+&lt;p&gt;Customize the name of the bookmark by clicking in the name field and entering your own text:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_name.png alt=&quot;Name Bookmark&quot; width=300&gt;
+&lt;p&gt;The new bookmark will save the current layer configuration (which layers are visible) and map extent (the location and zoom level) at the time of creation.  When you restart the browser, you can return to these same settings by opening the bookmarks menu and selecting the saved bookmark.  In my case, clicking on the Addresses bookmark will turn on the layers for addresses, parcels, and streets, while moving the map extent back to where it was when I created the bookmark, centered on City Hall:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_addresses.png alt=&quot;Addresses Bookmark&quot; width=500&gt;
+&lt;p&gt;If my next task is to update the water distribution network, this previously involved a lot of clicking on the City Web Viewer, because I would turn on nine different water distribution layers as well as the aerial imagery.  On the new Beta Version, I can set a second bookmark that will set all these layers to &amp;quot;visible&amp;quot; in a single click, and center me over the Water Treatment Plant:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_water.png alt=&quot;Water Bookmark&quot; width=500&gt;
+&lt;p&gt;Being able to save workspace state in the Web Viewer app has been our most commonly-requested feature, and we are hopeful that the new Bookmark widget will help streamline the experience for our users and make the Web Viewer a more viable and productive tool for our staff.  If you would like to help test out this feature on the new Beta Version, feel free to give it a try at &lt;a href=&quot;https:&#x2F;&#x2F;experience.arcgis.com&#x2F;experience&#x2F;9c1a9de28a864f59a6fcd5d4dbb5f00c&quot;&gt;this link&lt;&#x2F;a&gt;, and do not forget to let us know what you think!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Beta Testing for New Web Viewer</title>
+        <published>2023-07-25T00:00:00+00:00</published>
+        <updated>2023-07-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/beta-web-viewer/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/beta-web-viewer/</id>
+        
+        <content type="html">&lt;h1 id=&quot;beta-web-viewer-open-for-testing&quot;&gt;Beta Web Viewer Open For Testing&lt;&#x2F;h1&gt;
+&lt;p&gt;Since releasing the Web Viewer in February of 2022, we have received a lot of welcome feedback on how we can improve the user experience.  Although some of the comments have been directed toward how we could improve organization and layout of the map data, the majority of feedback has been about issues with the application interface.  Some commonly-desired features include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A button to &amp;quot;restore your previous session&amp;quot;.&lt;&#x2F;li&gt;
+&lt;li&gt;Filters for selecting types of content within features.&lt;&#x2F;li&gt;
+&lt;li&gt;A directional navigation widget.&lt;&#x2F;li&gt;
+&lt;li&gt;Tools for selecting multiple features and viewing their attributes in a table.&lt;&#x2F;li&gt;
+&lt;li&gt;Better drawing and measurement tools.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Before we can upgrade the existing Web Viewer to a new version, we need to field test the new app and make sure that it works as intended.  This is where you come in!  Help us test the new Beta version today by clicking on &lt;a href=&quot;https:&#x2F;&#x2F;experience.arcgis.com&#x2F;experience&#x2F;9c1a9de28a864f59a6fcd5d4dbb5f00c&#x2F;&quot;&gt;this link&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Why does the Beta version looks so different?&lt;&#x2F;em&gt; The current Web Viewer uses an ArcGIS Instant App template to provide an application framework.  Instant App templates include a thematic layout and a number of optional app features by default.  Because they are quick and easy to set up, an Instant App template made sense when were starting out, to get a product out quickly and start delivering services to our users right away.  However, these app templates are limited in their ability to incorporate new features and tools.  In order to get the customizability that we needed, we needed to go beyond Instant Apps and target a richer application framework.  Previously, the standard tool for building web apps in ArcGIS was the App Builder.  In recent years, the App Builder has been deprecated in favor of the new Experience Builder.  Experience Builder is based upon the latest version of Java, and is capable of integrating 2D and 3D map layouts, among other improvements.  Eventually, we may decide to start building custom widgets for our apps, in which case we can use Experience Builder Developer Edition or the JavaScript SDK for ArcGIS to create a fully-custom web app.  Custom apps are more difficult to host and maintain, so for this Beta version we are using Experience Builder.&lt;&#x2F;p&gt;
+&lt;p&gt;Features that are not implemented in the Beta version, but are on the roadmap to be implemented in the future:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web links to public records (Fee in Lieu, Service &amp;amp; Annexation and Deferred Development agreements, AFDs)&lt;&#x2F;li&gt;
+&lt;li&gt;Improved content organization of layers in the map.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Is your preferred feature not on the list?  Do you have changes you would like to see in the next Beta version?  Let us know!  Email us at gis@grantspassoregon.gov.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

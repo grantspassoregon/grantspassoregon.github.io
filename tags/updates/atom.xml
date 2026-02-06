@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Updates</title>
+    <link href="https://grantspassoregon.github.io/tags/updates/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-01-09T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/tags/updates/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Utility Updates 1&#x2F;9&#x2F;2025</title>
+        <published>2025-01-09T00:00:00+00:00</published>
+        <updated>2025-01-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/utility-updates-20250109/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/utility-updates-20250109/</id>
+        
+        <content type="html">&lt;h2 id=&quot;stormwater&quot;&gt;Stormwater&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SWGM-2650 now runs from SWCB-3287 to SWCB-3091 per Josh Lennon on 12&#x2F;16&#x2F;2024. Previously the map showed the outlet as SWMH-976.&lt;&#x2F;li&gt;
+&lt;li&gt;SWGM-2446 now runs from SWMH-839 to SWMH-1207 per Josh Lennon on 12&#x2F;17&#x2F;2024. Previously the pipe connected to SWMH-1206.
+&lt;ul&gt;
+&lt;li&gt;SWMH-1206 now connects to SWMH-1207 via SWGM-12231.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

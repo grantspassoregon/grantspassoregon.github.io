@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Announcements</title>
+    <link href="https://grantspassoregon.github.io/tags/announcements/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-07-03T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/tags/announcements/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Announcements for 7&#x2F;03&#x2F;2024</title>
+        <published>2024-07-03T00:00:00+00:00</published>
+        <updated>2024-07-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20240703/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20240703/</id>
+        
+        <content type="html">&lt;h2 id=&quot;address-verification&quot;&gt;Address Verification&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the primary uses of addresses issued by the city is for emergency response. Although we contract out our emergency dispatch services through Emergency Communications of Southern Oregon (ECSO), as the addressing authority we are responsible for ensuring the addresses that they use are accurate and up-to-date. Discrepancies between our address databases in the past have resulted in avoidable delays during response, emphasizing the fact that inaccuracies are a safety issue.&lt;&#x2F;p&gt;
+&lt;p&gt;As a small but growing city, we have many of the address problems that occur at a large federal agency like the USPS, but lack deep pockets to purchase the expensive third-party software they use to manage addresses. Instead, we have been developing our own internal tooling to automate the cross-agency reconciliation process. These tools are not as fancy or feature-rich, but they are getting the job done. Over the past year, we have corrected hundreds of records, including one dating back to 2008.&lt;&#x2F;p&gt;
+&lt;p&gt;Earlier this year, ECSO completed an update of their address database to comply with the latest National Emergency Number Association (NENA) standard. This update changes the way they store and report addresses, introducing new fields and altering the way they classify existing street names. Fortunately, Grants Pass moved to a NENA-compliant standard in 2022, so we had a head start tackling the new format from ECSO, but the process still took several weeks. During the update, our code base grew by only 3% to just under 7K LOC, while delivering new features and improving on existing methods. At the same time, our code documentation has increased from 350 to over 1000 lines, making the code easier to learn, maintain and share.&lt;&#x2F;p&gt;
+&lt;p&gt;As we grow to better understand the problem space, we continue to improve our methods and increase the efficiency of the process. In additional to reconciling addresses with ECSO, the address code now also validates addresses for business licenses, and calculates the LexisNexis service boundary from the set of valid addresses for emergency response. Over time, we hope that reconciling the address database with our partner agencies can become painless and automated, and that avoidable emergency response delays related to bad address information can become a thing of past.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;26&#x2F;2023</title>
+        <published>2023-10-26T00:00:00+00:00</published>
+        <updated>2023-10-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231026/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231026/</id>
+        
+        <content type="html">&lt;h2 id=&quot;city-web-viewer-updated&quot;&gt;City Web Viewer Updated&lt;&#x2F;h2&gt;
+&lt;p&gt;The Web Viewer will no longer prompt users to sign in to ECSO-911.  County services have switched to a view-only version for greater security.&lt;&#x2F;p&gt;
+&lt;p&gt;If you detect an issue with the City Web Viewer, contact our staff at &lt;a href=&quot;mailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Public version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Staff version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;City version of tax parcels updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;19&#x2F;2023</title>
+        <published>2023-10-19T00:00:00+00:00</published>
+        <updated>2023-10-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231019/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231019/</id>
+        
+        <content type="html">&lt;h2 id=&quot;web-links-added-to-online-viewer&quot;&gt;Web Links Added to Online Viewer&lt;&#x2F;h2&gt;
+&lt;p&gt;Staff and residents can now view planning agreements (Deferred Development, Fee in Lieu, Advanced Finance District, Service and Annexation) on the City Web Viewer.  The popup field for these assets will display a link under &amp;quot;Document: View&amp;quot;.  Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  Existing links in the GIS layer to these files on the employee network drives are still available and not affected by this change.&lt;&#x2F;p&gt;
+&lt;p&gt;The popup field for the tax parcel layers (City and County versions) now displays a link to the assessment map. Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  This differs from the behavior of the Josephine County Property Assessment Map, where the document link downloads the file to your PC.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links added the planning agreements layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links to assessment map added to taxlots layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Utility map updates pushed to Beehive.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Local database updates pushed to AGOL web services.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+</feed>

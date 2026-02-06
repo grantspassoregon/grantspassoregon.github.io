@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - News</title>
+    <link href="https://grantspassoregon.github.io/tags/news/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-07-03T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/tags/news/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Announcements for 7&#x2F;03&#x2F;2024</title>
+        <published>2024-07-03T00:00:00+00:00</published>
+        <updated>2024-07-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20240703/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20240703/</id>
+        
+        <content type="html">&lt;h2 id=&quot;address-verification&quot;&gt;Address Verification&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the primary uses of addresses issued by the city is for emergency response. Although we contract out our emergency dispatch services through Emergency Communications of Southern Oregon (ECSO), as the addressing authority we are responsible for ensuring the addresses that they use are accurate and up-to-date. Discrepancies between our address databases in the past have resulted in avoidable delays during response, emphasizing the fact that inaccuracies are a safety issue.&lt;&#x2F;p&gt;
+&lt;p&gt;As a small but growing city, we have many of the address problems that occur at a large federal agency like the USPS, but lack deep pockets to purchase the expensive third-party software they use to manage addresses. Instead, we have been developing our own internal tooling to automate the cross-agency reconciliation process. These tools are not as fancy or feature-rich, but they are getting the job done. Over the past year, we have corrected hundreds of records, including one dating back to 2008.&lt;&#x2F;p&gt;
+&lt;p&gt;Earlier this year, ECSO completed an update of their address database to comply with the latest National Emergency Number Association (NENA) standard. This update changes the way they store and report addresses, introducing new fields and altering the way they classify existing street names. Fortunately, Grants Pass moved to a NENA-compliant standard in 2022, so we had a head start tackling the new format from ECSO, but the process still took several weeks. During the update, our code base grew by only 3% to just under 7K LOC, while delivering new features and improving on existing methods. At the same time, our code documentation has increased from 350 to over 1000 lines, making the code easier to learn, maintain and share.&lt;&#x2F;p&gt;
+&lt;p&gt;As we grow to better understand the problem space, we continue to improve our methods and increase the efficiency of the process. In additional to reconciling addresses with ECSO, the address code now also validates addresses for business licenses, and calculates the LexisNexis service boundary from the set of valid addresses for emergency response. Over time, we hope that reconciling the address database with our partner agencies can become painless and automated, and that avoidable emergency response delays related to bad address information can become a thing of past.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Case for Rust at City of Grants Pass</title>
+        <published>2023-12-13T00:00:00+00:00</published>
+        <updated>2023-12-13T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/rust-info/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/rust-info/</id>
+        
+        <content type="html">&lt;h1 id=&quot;why-rust&quot;&gt;Why Rust?&lt;&#x2F;h1&gt;
+&lt;p&gt;From the CISA white paper, &lt;a href=&quot;https:&#x2F;&#x2F;www.cisa.gov&#x2F;sites&#x2F;default&#x2F;files&#x2F;2023-12&#x2F;The-Case-for-Memory-Safe-Roadmaps-508c.pdf&quot;&gt;The Case for Memory-Safe Roadmaps&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mozilla released Rust in 2015. It is a compiled language and focuses on performance, type safety, and concurrency. It has an ownership model designed to ensure that there is only one owner of a piece of data. It has a feature called a “borrow checker” designed to ensure memory safety and prevent concurrent data races. While not perfect, the borrow checker system goes a long way to addressing memory safety issues at compile time. Rust enforces correctness at compile time to prevent memory safety and concurrency problems at runtime. As an example, a data race is a class of software bug that is notoriously hard to track down.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;“With Rust, you can statically verify that you don’t have data races. This means you avoid tricky-to-debug bugs by just not letting them into your code in the first place. The compiler won’t let you do it.”&lt;&#x2F;em&gt; - Lin Clark (Fastly)&lt;&#x2F;p&gt;
+&lt;p&gt;Rust has been getting a great deal of attention from several high-profile technologies, including the Linux kernel, Android, and Windows. It is also used in apps like those from Mozilla, and other online services, such as Dropbox, Amazon, and Facebook.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Reasons that Microsoft &lt;a href=&quot;https:&#x2F;&#x2F;security.googleblog.com&#x2F;2023&#x2F;01&#x2F;supporting-use-of-rust-in-chromium.html&quot;&gt;provided&lt;&#x2F;a&gt; for bringing Rust into the Chromium project (the Chrome browser):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simpler to use&lt;&#x2F;li&gt;
+&lt;li&gt;Safer&lt;&#x2F;li&gt;
+&lt;li&gt;Speeds up development&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;memory-safety&quot;&gt;Memory Safety&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;The Case for Memory Safe Roadmaps&lt;&#x2F;em&gt; published by the Cybersecurity and Infrastructure Security Agency (CISA) in December 2023 describes a memory safety vulnerability as a vulnerability affecting how memory can be accessed, written, allocated or deallocated in unintended ways. Memory-related coding errors include &amp;quot;buffer overflow&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;120.html&quot;&gt;CWE-120&lt;&#x2F;a&gt;), &amp;quot;use after free&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;416.html&quot;&gt;CWE-416&lt;&#x2F;a&gt;), &amp;quot;use of uninitialized memory&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;908.html&quot;&gt;CWE-908&lt;&#x2F;a&gt;) and &amp;quot;double free&amp;quot; (&lt;a href=&quot;https:&#x2F;&#x2F;cwe.mitre.org&#x2F;data&#x2F;definitions&#x2F;415.html&quot;&gt;CWE-415&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;Memory safety vulnerabilities account for a large class of common vulnerabilities and exposures (CVEs). About 70% of Microsoft CVEs from &lt;a href=&quot;https:&#x2F;&#x2F;msrc.microsoft.com&#x2F;blog&#x2F;2019&#x2F;07&#x2F;a-proactive-approach-to-more-secure-code&#x2F;&quot;&gt;2006-2018&lt;&#x2F;a&gt; were memory safety vulnerabilities, as well as 70% of vulnerabilities identified in Google&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;www.chromium.org&#x2F;Home&#x2F;chromium-security&#x2F;memory-safety&#x2F;&quot;&gt;Chromium&lt;&#x2F;a&gt; project. One &lt;a href=&quot;https:&#x2F;&#x2F;hacks.mozilla.org&#x2F;2019&#x2F;02&#x2F;rewriting-a-browser-component-in-rust&#x2F;&quot;&gt;analysis&lt;&#x2F;a&gt; found 32 of 34 critical&#x2F;high bugs were memory safety vulnerabilities, and Google&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;googleprojectzero.blogspot.com&#x2F;2022&#x2F;04&#x2F;the-more-you-know-more-you-know-you.html&quot;&gt;Project Zero&lt;&#x2F;a&gt; team found 67% of zero-day vulnerabilities in 2021 were memory safety vulnerabilities.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;adoption&quot;&gt;Adoption&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;grantspassoregon.github.io&#x2F;newsfeed&#x2F;rust-info&#x2F;.&#x2F;images&#x2F;rust_daily_downloads.png&quot;&gt;Rust Daily Downloads&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This &lt;a href=&quot;https:&#x2F;&#x2F;maticrobots.com&#x2F;blog&#x2F;why-rust-its-the-safe-choice&#x2F;&quot;&gt;article&lt;&#x2F;a&gt; from Matic:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Using Rust for critical tasks prevents many common security bugs, and encourages robust error handling. This helps us harden our software and protect private data.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We don&#x27;t spend time chasing memory safety bugs or concurrency errors, because the compiler has guard rails that push back when code tries to do something dangerous. It&#x27;s easy to make changes quickly, because the compiler will prevent entire categories of errors. In other languages, this &amp;quot;push back&amp;quot; can be delayed a long time (until static analysis runs, or runtime safety checks fire, or customers report bugs). With Rust we can catch most of these bugs almost instantly.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are long-term benefits, too. Rust&#x27;s type-focused style and firm boundaries improve the long-term manageability of code. Refactoring can be done fearlessly, and the compiler safety checks are robust enough that the refactoring is often done the moment the code compiles.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Did we take a risk by using Rust? Are we spending our &amp;quot;innovation tokens&amp;quot; recklessly? In our experience, Rust is the safe choice, and it&#x27;s hard to imagine using anything else. We are able to build things in less time, with less risk, and have more fun doing it. Developers can be fearlessly productive, because there is a lower risk of bugs that cost months of developer time.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;From the Filtra Rust &lt;a href=&quot;https:&#x2F;&#x2F;filtra.io&#x2F;rust-feb-24&quot;&gt;jobs report&lt;&#x2F;a&gt;, Matic has five full-time Rust developers on staff.&lt;&#x2F;p&gt;
+&lt;p&gt;This &lt;a href=&quot;https:&#x2F;&#x2F;blog.sdf.com&#x2F;p&#x2F;fast-development-in-rust-part-one&quot;&gt;article&lt;&#x2F;a&gt; from SDF:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Looking back from this one year mark, we&#x27;re happy to report that not only did we not die on the proverbial hill of learning Rust, the (much hyped) benefits of the language started materializing into tangible returns far sooner than we anticipated. While there is undeniably an upfront investment to learn Rust, by this point for us it has easily paid for itself many, many times over. Rust makes certain tasks easy that would have been exceedingly challenging in other languages.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An often under appreciated benefit of using a strongly-typed language like Rust in a fast-paced startup environment, is how much it helps with the task of refactoring. ... Because we know that better abstractions an be easily added later, it frees us to be much more bold in experimenting with new features! In Rust we are actually far more comfortable doing the &#x27;quick and dirty&#x27; thing to rapidly implement some new feature, knowing that it can all be easily cleaned up into better abstractions later when the requirements become better understood.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Quoting Lars Bergstrom from &lt;a href=&quot;https:&#x2F;&#x2F;www.theregister.com&#x2F;2024&#x2F;03&#x2F;31&#x2F;rust_google_c&#x2F;&quot;&gt;The Register&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There&#x27;s no loss in productivity when moving from Go to Rust. And the interesting thing is we do see some benefits from it. So we see reduced memory usage in the services that we&#x27;ve moved from Go ... and we see a decreased defect rate over time in those services that have been rewritten in Rust – so increasing correctness.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We&#x27;ve seen a decrease by more than 2x in the amount of effort required to build the services in Rust [compared to C++] as well as maintain and update those services written in Rust, and so that&#x27;s a really huge thing for us because C++ code is very expensive.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Eight-five percent of [our developers] believe that their Rust code is more likely to be correct than the other code within their system. … I&#x27;ve been through more than one language survey in my life and I&#x27;ve never seen those kinds of numbers before.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;thenewstack.io&#x2F;meet-grain-the-high-level-language-optimized-for-webassembly&#x2F;&quot;&gt;The New Stack&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“OCaml [was] this fantastic language from the ’90s, with all these amazing different language features … one of the huge features was pattern matching,” he said. “Pattern matching is this incredible, powerful programming language feature that most languages have not had at all.”&lt;&#x2F;p&gt;
+&lt;p&gt;Pattern matching in languages like OCaml, Grain and Rust means the compiler will alert the developer if an edge case is missed and a piece of data might break the program, he explained.&lt;&#x2F;p&gt;
+&lt;p&gt;“That is such a powerful concept; just because of that you eliminate so many different possible bugs in your programs,” Spencer said. “One of the funny things they say about OCaml is [that] if your code compiles, it’s correct. It might not do what you wanted it to do, but it’s definitely doing what it’s supposed to do based on the code.”&lt;&#x2F;p&gt;
+&lt;p&gt;That’s not something you have with JavaScript or Python, he added.&lt;&#x2F;p&gt;
+&lt;p&gt;“You write those programs, and it’s broken, you’ve got to go figure out why is the thing broken. And you put in a bunch of log statements and try to debug it and it’s a pain in the butt when you have these other languages that are able to just tell you, ‘Hey, here’s exactly how your code is broken,’” he said.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This is from an interview of Oscar Spencer about the Grain language for web assembly. Even though the author is not promoting Rust, this statement on the virtues of pattern matching in Rust closely matches my own experience.&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a href=&quot;https:&#x2F;&#x2F;o-santi.github.io&#x2F;blog&#x2F;rust-is-not-about-memory-safety&#x2F;&quot;&gt;Leonardo Santiago&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The main strength of Rust, and where it differs from all mainstream languages, is that it has a very clear focus on program correctness. The &lt;em&gt;raison d’être&lt;&#x2F;em&gt; of the borrow checker is statically assuring that all references are pointing to valid memory, such that it is literally impossible for any borrow be null or to point to some freed memory (modulus implementation errors of course).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;...&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Not only that, but Rust language&#x27;s features makes it so, so much easier to write correct software: sum types (tagged unions), &lt;code&gt;Option&lt;&#x2F;code&gt; instead of &lt;code&gt;NULL&lt;&#x2F;code&gt; (which in and of itself is amazing), &lt;code&gt;Result&lt;&#x2F;code&gt; for errors (making obligatory to handle all possible branches your program can take), a strong and powerful static type system, and ditching inheritance and classes in favor of traits.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that I never ever talked about memory safety. Even in a world where C wasn’t in fact full of memory vulnerabilities, Rust would still be miles better, because it statically assures you that the meaning of your program is tightly reproduced by the code you’ve written.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Web Viewer Links</title>
+        <published>2023-11-20T00:00:00+00:00</published>
+        <updated>2023-11-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/web-viewer-links/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/web-viewer-links/</id>
+        
+        <content type="html">&lt;p&gt;A commonly-requested feature for the City Web Viewer is access to public documents, such as final plats or financial agreements, including Fee in Lieu, Deferred Development, Service &amp;amp; Annexation Agreements or Advance Finance Districts.  We are pleased to announce that the new version of the Web Viewer map includes web links to these various public documents, making them accessible to view and download for members of the public.&lt;&#x2F;p&gt;
+&lt;p&gt;To access final plats, turn on the visibility of the Subdivision Plats layer in the Property category of the Layers widget.  When you click on a feature, the viewing link will appear in the pop-up menu:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 1.  Web Link for Final Plats.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_plats.png alt=&quot;Web Links for Final Plats&quot; width=300&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;!-- &lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_plats.png alt=&quot;Web Links for Final Plats&quot; width=300&gt; --&gt;
+&lt;p&gt;To access City financial agreements, turn on the appropriate layer in the Planning category under Agreements and Financial sub-heading.  When you click on a feature, the viewing link will appear in the pop-up menu:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;figure&gt;
+    &lt;caption&gt; Figure 2.  Web Link for AFDs.&lt;&#x2F;caption&gt;
+    &lt;center&gt;
+
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;web_links_afd.png alt=&quot;Web Links for AFDs&quot; width=300&gt;
+    &lt;&#x2F;center&gt;
+&lt;&#x2F;figure&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Preparing this service for public access was a non-trivial process, because the City computer network was not set up to support this functionality.  Staff at the City access work documents using a shared network drive.  Our GIS layers often include links to documents on our network drive, and in ArcGIS these links will open the document on a PC that is operating on our internal network.  In the past, when the public wanted access to these documents, they would drop by the planning counter in person, or contact a member of our staff by email or phone.&lt;&#x2F;p&gt;
+&lt;p&gt;To facilitate public viewing and download, staff migrated storage of these documents to the City website, adding web links to over 4,000 features on the Web Viewer map.  If you discover a link that fails to open, or desire access to an additional class of documents, please let us know at &lt;a href=&quot;emailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;26&#x2F;2023</title>
+        <published>2023-10-26T00:00:00+00:00</published>
+        <updated>2023-10-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231026/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231026/</id>
+        
+        <content type="html">&lt;h2 id=&quot;city-web-viewer-updated&quot;&gt;City Web Viewer Updated&lt;&#x2F;h2&gt;
+&lt;p&gt;The Web Viewer will no longer prompt users to sign in to ECSO-911.  County services have switched to a view-only version for greater security.&lt;&#x2F;p&gt;
+&lt;p&gt;If you detect an issue with the City Web Viewer, contact our staff at &lt;a href=&quot;mailto:gis@grantspassoregon.gov&quot;&gt;gis@grantspassoregon.gov&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Public version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Staff version of City Web Viewer updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;20&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;City version of tax parcels updated.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Announcements for 10&#x2F;19&#x2F;2023</title>
+        <published>2023-10-19T00:00:00+00:00</published>
+        <updated>2023-10-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/announcements-20231019/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/announcements-20231019/</id>
+        
+        <content type="html">&lt;h2 id=&quot;web-links-added-to-online-viewer&quot;&gt;Web Links Added to Online Viewer&lt;&#x2F;h2&gt;
+&lt;p&gt;Staff and residents can now view planning agreements (Deferred Development, Fee in Lieu, Advanced Finance District, Service and Annexation) on the City Web Viewer.  The popup field for these assets will display a link under &amp;quot;Document: View&amp;quot;.  Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  Existing links in the GIS layer to these files on the employee network drives are still available and not affected by this change.&lt;&#x2F;p&gt;
+&lt;p&gt;The popup field for the tax parcel layers (City and County versions) now displays a link to the assessment map. Clicking on &amp;quot;View&amp;quot; will open the pdf in a new browser tab.  This differs from the behavior of the Josephine County Property Assessment Map, where the document link downloads the file to your PC.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-log&quot;&gt;Change Log&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;&#x2F;th&gt;&lt;th&gt;Event&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links added the planning agreements layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;17&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Web links to assessment map added to taxlots layer.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Utility map updates pushed to Beehive.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;10&#x2F;16&#x2F;2023&lt;&#x2F;td&gt;&lt;td&gt;Local database updates pushed to AGOL web services.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Beta Testing for New Web Viewer</title>
+        <published>2023-07-25T00:00:00+00:00</published>
+        <updated>2023-07-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/beta-web-viewer/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/beta-web-viewer/</id>
+        
+        <content type="html">&lt;h1 id=&quot;beta-web-viewer-open-for-testing&quot;&gt;Beta Web Viewer Open For Testing&lt;&#x2F;h1&gt;
+&lt;p&gt;Since releasing the Web Viewer in February of 2022, we have received a lot of welcome feedback on how we can improve the user experience.  Although some of the comments have been directed toward how we could improve organization and layout of the map data, the majority of feedback has been about issues with the application interface.  Some commonly-desired features include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A button to &amp;quot;restore your previous session&amp;quot;.&lt;&#x2F;li&gt;
+&lt;li&gt;Filters for selecting types of content within features.&lt;&#x2F;li&gt;
+&lt;li&gt;A directional navigation widget.&lt;&#x2F;li&gt;
+&lt;li&gt;Tools for selecting multiple features and viewing their attributes in a table.&lt;&#x2F;li&gt;
+&lt;li&gt;Better drawing and measurement tools.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Before we can upgrade the existing Web Viewer to a new version, we need to field test the new app and make sure that it works as intended.  This is where you come in!  Help us test the new Beta version today by clicking on &lt;a href=&quot;https:&#x2F;&#x2F;experience.arcgis.com&#x2F;experience&#x2F;9c1a9de28a864f59a6fcd5d4dbb5f00c&#x2F;&quot;&gt;this link&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Why does the Beta version looks so different?&lt;&#x2F;em&gt; The current Web Viewer uses an ArcGIS Instant App template to provide an application framework.  Instant App templates include a thematic layout and a number of optional app features by default.  Because they are quick and easy to set up, an Instant App template made sense when were starting out, to get a product out quickly and start delivering services to our users right away.  However, these app templates are limited in their ability to incorporate new features and tools.  In order to get the customizability that we needed, we needed to go beyond Instant Apps and target a richer application framework.  Previously, the standard tool for building web apps in ArcGIS was the App Builder.  In recent years, the App Builder has been deprecated in favor of the new Experience Builder.  Experience Builder is based upon the latest version of Java, and is capable of integrating 2D and 3D map layouts, among other improvements.  Eventually, we may decide to start building custom widgets for our apps, in which case we can use Experience Builder Developer Edition or the JavaScript SDK for ArcGIS to create a fully-custom web app.  Custom apps are more difficult to host and maintain, so for this Beta version we are using Experience Builder.&lt;&#x2F;p&gt;
+&lt;p&gt;Features that are not implemented in the Beta version, but are on the roadmap to be implemented in the future:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web links to public records (Fee in Lieu, Service &amp;amp; Annexation and Deferred Development agreements, AFDs)&lt;&#x2F;li&gt;
+&lt;li&gt;Improved content organization of layers in the map.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Is your preferred feature not on the list?  Do you have changes you would like to see in the next Beta version?  Let us know!  Email us at gis@grantspassoregon.gov.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

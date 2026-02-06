@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Beta Version</title>
+    <link href="https://grantspassoregon.github.io/tags/beta-version/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://grantspassoregon.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-07-26T00:00:00+00:00</updated>
+    <id>https://grantspassoregon.github.io/tags/beta-version/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Bookmarks in the Web Viewer Beta Version</title>
+        <published>2023-07-26T00:00:00+00:00</published>
+        <updated>2023-07-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://grantspassoregon.github.io/newsfeed/bookmarks/" type="text/html"/>
+        <id>https://grantspassoregon.github.io/newsfeed/bookmarks/</id>
+        
+        <content type="html">&lt;h3 id=&quot;why-do-we-need-bookmarks&quot;&gt;Why Do We Need Bookmarks?&lt;&#x2F;h3&gt;
+&lt;p&gt;With more than a hundred layers of map data available to view on the City Web Viewer, the overlay of information would be overwhelming if they were all visible at once.  Part of the reason we include so many layers is that different departments use different sets of layers for their work, and so although we could set commonly-used layers to start as visible, staff do not agree on the set of layers that should be visible, and their needs change from project to project.  A particular point of frustration with using a browser-based mapping application is that our users will spend time turning on a set of layers related to a specific task, and then have to turn them all on again if they refresh their browser.&lt;&#x2F;p&gt;
+&lt;p&gt;This was a common-enough pain point among users that the old version of ESRI&#x27;s App Builder had a &amp;quot;Restore Your Previous Session&amp;quot; button to set the layer configuration and map extent so that it matched the settings on at the last time of use.  However, the new ESRI Experience Builder does not offer this restore button, instead it has bookmarks.  Bookmarks offer a major improvement over the old &amp;quot;Restore Your Previous Session&amp;quot; button, because you can store multiple configurations as separate bookmarks and switch quickly between them.  Bookmarks also persist more reliably between browser refreshes, while the &amp;quot;Restore Your Previous Session&amp;quot; button had a nasty habit of forgetting where you were last time, forcing you to start over from scratch.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-do-i-make-bookmarks&quot;&gt;How Do I Make Bookmarks?&lt;&#x2F;h3&gt;
+&lt;p&gt;The Bookmarks widget is located along the row of widgets at the right side of the banner at the top of the screen.  The icon looks like a book with a cloth bookmark sticking out:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_menu.png alt=&quot;Bookmarks Menu&quot; width=400&gt;
+&lt;p&gt;To make a new bookmark, open the Bookmarks menu by clicking on the widget, and select the empty thumbnail with the plus sign in it:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_new.png alt=&quot;New Bookmark&quot; width=300&gt;
+&lt;p&gt;Customize the name of the bookmark by clicking in the name field and entering your own text:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_name.png alt=&quot;Name Bookmark&quot; width=300&gt;
+&lt;p&gt;The new bookmark will save the current layer configuration (which layers are visible) and map extent (the location and zoom level) at the time of creation.  When you restart the browser, you can return to these same settings by opening the bookmarks menu and selecting the saved bookmark.  In my case, clicking on the Addresses bookmark will turn on the layers for addresses, parcels, and streets, while moving the map extent back to where it was when I created the bookmark, centered on City Hall:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_addresses.png alt=&quot;Addresses Bookmark&quot; width=500&gt;
+&lt;p&gt;If my next task is to update the water distribution network, this previously involved a lot of clicking on the City Web Viewer, because I would turn on nine different water distribution layers as well as the aerial imagery.  On the new Beta Version, I can set a second bookmark that will set all these layers to &amp;quot;visible&amp;quot; in a single click, and center me over the Water Treatment Plant:&lt;&#x2F;p&gt;
+&lt;img src=&#x2F;content&#x2F;newsfeed&#x2F;bookmark_water.png alt=&quot;Water Bookmark&quot; width=500&gt;
+&lt;p&gt;Being able to save workspace state in the Web Viewer app has been our most commonly-requested feature, and we are hopeful that the new Bookmark widget will help streamline the experience for our users and make the Web Viewer a more viable and productive tool for our staff.  If you would like to help test out this feature on the new Beta Version, feel free to give it a try at &lt;a href=&quot;https:&#x2F;&#x2F;experience.arcgis.com&#x2F;experience&#x2F;9c1a9de28a864f59a6fcd5d4dbb5f00c&quot;&gt;this link&lt;&#x2F;a&gt;, and do not forget to let us know what you think!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
