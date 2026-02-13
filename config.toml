@@ -9,6 +9,13 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+generate_feed = true
+feed_filename = "atom.xml"
 
 [extra]
 navbar_items = [
