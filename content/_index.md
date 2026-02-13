@@ -2,7 +2,6 @@
 title = "City of Grants Pass GIS Division"
 paginate_by = 5
 sort_by = "date"
-toc = true
 +++
 
 # Welcome
