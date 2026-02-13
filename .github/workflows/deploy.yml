@@ -19,11 +19,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Setup Zola
-        uses: getzola/action-install@v1
+        uses: taiki-e/install-action@v2
         with:
-          zola_version: v0.22.0
+          tool: zola@0.22.0
 
       - name: Build site
         run: zola build
