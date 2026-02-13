@@ -1,0 +1,40 @@
+# The URL the site will be built for
+base_url = "https://grantspassoregon.github.io"
+
+theme = "DeepThought"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+navbar_items = [
+  { code = "en", nav_items = [
+    { url = "$BASE_URL", name = "Home" },
+    { url = "$BASE_URL/newsfeed", name = "News" },
+    { url = "$BASE_URL/blog", name = "Blog" },
+    { url = "$BASE_URL/staff", name = "Staff" },
+    { url = "$BASE_URL/categories", name = "Categories" },
+    { url = "$BASE_URL/tags", name = "Tags" },
+    { url = "https://github.com/grantspassoregon", name = "github", newtab = true },
+  ] },
+]
+
+[extra.author]
+name = "Erik Rose"
+avatar = ""
+
+[extra.social]
+email = "gis@grantspassoregon.gov"
+gitlab = ""
+github = "https://github.com/grantspassoregon"
+linkedin = ""
+twitter = ""
+facebook = ""
