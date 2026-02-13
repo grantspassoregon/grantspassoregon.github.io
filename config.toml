@@ -14,6 +14,7 @@ taxonomies = [
   { name = "tags", feed = true },
 ]
 
+# conflict between theme (out of date), tries to use feed_filename in index.html social buttons, but not a valid key anymore
 # generate_feeds = true
 
 [extra]
