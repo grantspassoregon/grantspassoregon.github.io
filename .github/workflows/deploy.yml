@@ -1,6 +1,8 @@
 # On every push this script is executed
 name: Build and deploy GH Pages
-on: push
+on:
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -15,13 +17,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v6.0.1
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Build Zola + upload Pages artifact
-        uses: getzola/github-pages@066755243e69f508fd1a74739fbf1a65f656c790
+      - name: Setup Zola
+        uses: getzola/action-install@v1
         with:
           zola_version: v0.22.0
+
+      - name: Build site
+        run: zola build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
 
   deploy:
     runs-on: ubuntu-latest
