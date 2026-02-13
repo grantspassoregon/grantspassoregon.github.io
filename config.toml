@@ -15,7 +15,7 @@ taxonomies = [
 ]
 
 generate_feeds = true
-feed_filenames = ["atom.xml"]
+feed_filename = "atom.xml"
 
 
 [extra]
