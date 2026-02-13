@@ -14,8 +14,7 @@ taxonomies = [
   { name = "tags", feed = true },
 ]
 
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
 
 [extra]
 navbar_items = [
