@@ -1,4 +1,4 @@
 +++
-title = "Newsfeed"
+title = "News"
 sort_by = "date"
 +++
