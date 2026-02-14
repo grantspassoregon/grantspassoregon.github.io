@@ -14,6 +14,19 @@ author = "Erik Rose"
 
 When many of us started receiving deprecation warnings for geometric networks from ESRI years ago, we shook our heads ruefully. Who has time to migrate? Not now! If you are like me, you have kicked the can down the road year after year, and now 2026 is here. As of [March 1st](https://support.esri.com/en-us/products/arcmap/life-cycle), **geometric networks are no longer officially supported**, and we haven't migrated yet. If you are in the same boat, do not worry. In this blog series, we will take you step by step through our UN migration at the City of Grants Pass. You will share our suffering, learn from our mistakes, and by the end I hope you will feel new confidence for tackling this migration in your municipality. So let's begin!
 
+## Contents
+
+- [Meet Grants Pass](#meet-grants-pass)
+  - [Why Wastewater?](#why-wastewater)
+  - [Initial Scope](#initial-scope)
+- [Project Setup](#project-setup)
+  - [A Defensive Copy](#a-defensive-copy)
+  - [Download the Sewer Utility Network Foundation](#download-the-sewer-utility-network-foundation)
+  - [Download the _untools_ package](#download-the-untools-package)
+  - [Change Asset Package Spatial Reference](#change-asset-package-spatial-reference)
+  - [Set the Service Territory](#set-the-service-territory)
+- [Conclusion](#conclusion)
+
 ## Meet Grants Pass
 
 Grants Pass is a small city of 40,000 people, nestled in the Rogue Valley of Southern Oregon, just north of the Oregon Caves. Geographically bound by steep hillslopes, our city is small enough to have only a single staff member (me) assigned to utilities, but large enough that we encounter many of the data quality issues that plague larger cities.
@@ -192,4 +205,4 @@ All that being said, I could have just drawn a box around the assets in our exis
 
 ## Conclusion
 
-This concludes the setup process for our wastewater migration. I know -- we haven't done any actual migration yet! What we _have_ done is installed the required tools, downloaded the necessary source materials, and created a focused project space. We have projected our destination asset package into our target spatial projection, created our service territory, and now we are ready to actually start importing. For our blog series, we will continue to break down the elephant migration process into digestible article-sized bites. In the next post, we will examine how to use the Data Loading tools to import our assets from the source data into the target schema. Stay tuned!
+This concludes the setup process for our wastewater migration. I know -- we haven't done any actual migration yet! What we _have_ done is installed the required tools, downloaded the necessary source materials, and created a focused project space. We have projected our destination asset package into our target spatial projection, created our service territory, and now we are ready to actually start importing. For our blog series, we will continue to break down the elephant migration process into digestible article-sized bites. In the [next post](./un_migration_wastewater_2.md), we will examine how to use the Data Loading tools to import our assets from the source data into the target schema. Stay tuned!
