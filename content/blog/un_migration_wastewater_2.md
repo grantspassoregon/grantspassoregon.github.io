@@ -14,7 +14,7 @@ author = "Erik Rose"
 
 When many of us started receiving deprecation warnings for geometric networks from ESRI years ago, we shook our heads ruefully. Who has time to migrate? Not now! If you are like me, you have kicked the can down the road year after year, and now 2026 is here. As of [March 1st](https://support.esri.com/en-us/products/arcmap/life-cycle), **geometric networks are no longer officially supported**, and we haven't migrated yet. If you are in the same boat, do not worry. In this blog series, we will take you step by step through our UN migration at the City of Grants Pass. You will share our suffering, learn from our mistakes, and by the end I hope you will feel new confidence for tackling this migration in your municipality.
 
-This is the second post in our UN Wastewater Migration series. In the first post, we cover project setup, including installation of the _untools_ package and downloading the Utility Network Foundation. Today, we will introduce you to the Data Loading tools, and give you a brief tour of the DataReference sheet that you will use to orchestrate the import process.
+This is the second post in our UN Wastewater Migration series. In the [first post](../un-migration-wastewater-1), we cover project setup, including installation of the _untools_ package and downloading the Utility Network Foundation. Today, we will introduce you to the Data Loading tools, and give you a brief tour of the DataReference sheet that you will use to orchestrate the import process.
 
 ## Contents
 
@@ -141,7 +141,7 @@ The _Enabled_ column indicates whether the Data Loading tools will process the r
 
 #### Maintain Attachments
 
-The _MaintainAttachments_ column indicates whether the Data Loading tools will include attachments when it imports data from the source layer. You may recall in Part 1 that we deleted the attachments from our source data, because we did not need them in the new network. Deleting the attachments entirely results in a slight performance boost during loads, since the size of the source dataset is smaller. We already deleted all our attachments, so the value of the rows in this column will not impact our import, but generally speaking you can ignore attachments during import using FALSE and honor them using TRUE.
+The _MaintainAttachments_ column indicates whether the Data Loading tools will include attachments when it imports data from the source layer. You may recall in [Part 1](../un-migration-wastewater-1) that we deleted the attachments from our source data, because we did not need them in the new network. Deleting the attachments entirely results in a slight performance boost during loads, since the size of the source dataset is smaller. We already deleted all our attachments, so the value of the rows in this column will not impact our import, but generally speaking you can ignore attachments during import using FALSE and honor them using TRUE.
 
 #### Preserve Global IDs
 
