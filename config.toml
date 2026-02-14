@@ -21,7 +21,7 @@ taxonomies = [
 navbar_items = [
   { code = "en", nav_items = [
     { url = "$BASE_URL", name = "Home" },
-    { url = "$BASE_URL/newsfeed", name = "News" },
+    { url = "$BASE_URL/news", name = "News" },
     { url = "$BASE_URL/blog", name = "Blog" },
     { url = "$BASE_URL/staff", name = "Staff" },
     { url = "$BASE_URL/categories", name = "Categories" },
